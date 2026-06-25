@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Government Job</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0c0c0e; /* Dark Premium Black Background */
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        /* Top Website Header */
+        .header-site {
+            margin: 20px 0 40px 0;
+            text-align: center;
+        }
+
+        .header-site a {
+            font-size: 28px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .header-site a:hover {
+            color: #3b82f6;
+        }
+
+        /* Main Container */
+        .contact-container {
+            background: #16161a;
+            max-width: 1000px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            border: 1px solid #2a2a30;
+        }
+
+        /* Left Side: Photo & Info */
+        .contact-profile {
+            background: #1f1f24;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            border-right: 1px solid #2a2a30;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+        }
+
+        .designer-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-details {
+            width: 100%;
+            text-align: left;
+            padding-top: 15px;
+            border-top: 1px solid #2a2a30;
+        }
+
+        .info-item {
+            margin-bottom: 20px;
+        }
+
+        .info-item h4 {
+            font-size: 13px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .info-item p {
+            font-size: 15px;
+            color: #e2e8f0;
+            line-height: 1.5;
+        }
+
+        /* Right Side: Contact Form */
+        .contact-form-wrapper {
+            padding: 40px;
+        }
+
+        .form-header h3 {
+            font-size: 26px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-header p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #cbd5e1;
+            margin-bottom: 8px;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: #1f1f24;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: #3b82f6;
+            background: #24242b;
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .submit-btn {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease, transform 0.1s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #3b82f6;
+        }
+
+        .submit-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Responsive Layout (Mobile screens) */
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            .contact-profile {
+                border-right: none;
+                border-bottom: 1px solid #2a2a30;
+                padding: 30px;
+            }
+            .contact-form-wrapper {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Website Header -->
+    <div class="header-site">
+        <a href="https://www.governmentjob.com" target="_blank">www.governmentjob.com</a>
+    </div>
+
+    <!-- Main Contact Box -->
+    <div class="contact-container">
+        
+        <!-- Left Section: Photo and Info -->
+        <div class="contact-profile">
+            <!-- Aapki Photo (Make sure IMG_20260625_081844.jpg is in the same folder) -->
+            <img src="IMG_20260625_081844.jpg" alt="Ashish" class="profile-img">
+            
+            <!-- Designed By Ashish text updated here -->
+            <div class="designer-title">Designed by Ashish</div>
+
+            <div class="info-details">
+                <!-- Email -->
+                <div class="info-item">
+                    <h4>Email Address</h4>
+                    <p>ankitbhooker87@gmail.com</p>
+                </div>
+                <!-- Address -->
+                <div class="info-item">
+                    <h4>Office Address</h4>
+                    <p>15, Barakhamba Road, Connaught Place,<br>New Delhi - 110001, India</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Contact Form -->
+        <div class="contact-form-wrapper">
+            <div class="form-header">
+                <h3>Contact Us</h3>
+                <p>Feel free to drop us a message. We'll reply as soon as possible.</p>
+            </div>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
